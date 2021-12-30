@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+
+ul {
+  background-color: #FF5858;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  width: 385px;
+  height: 100%;
+}
+
+#ul {
+  list-style-type: none;
+  display: block;
+}
+
+ul>li {
+  display: inline-block;
+  margin: 8px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+ul>li>a{
+  text-decoration: none;
+  color:white;
+  display: inline-block;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+.intro { 
+  
+  width: 385px;
+  height: 250px;
+  background: url("https://i.ibb.co/fH67Rmy/Hamburger-french-fries-and-fried-chicken-in-takeaway-containers-on-the-wooden-background-Food-delive.jpg") no-repeat fixed;
+  background-size: 385px 250px;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 385px;
+  height: 930px;
+  background-color: #FCA2A2;
+  flex-direction: column;
+}
+
+.food {
+  margin: 0px auto;
+  width: 365px;
+  height: 210px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0px 0px 0px 15px;
+}
+
+.delivery {
+  margin: 0px auto;
+  width: 365px;
+  height: 210px;
+  background-color: #73FF6C;
+  border-radius: 20px;
+  padding: 0px 0px 0px 15px;
+}
+
+.services {
+  margin: 0px auto;
+  width: 365px;
+  height: 210px;
+  background-color: #FED84B;
+  border-radius: 20px;
+  padding: 0px 0px 0px 15px;
+}
+
+.details {
+  margin: 0px auto;
+  width: 365px;
+  height: 210px;
+  background-color: #6FB9FF;
+  border-radius: 20px;
+  padding: 0px 0px 0px 15px;
+}
+
+.closing {
+  width: 385px;
+  height: 725px;
+  background-color: orange;
+}
+
+.text {
+  color: #FFDE00;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Calistoga', cursive;
+}
+
+.para {
+  color: rgba(236, 236, 236, 1);
+  font-size: 15px;
+  padding-left: 5px;
+  font-family: 'Bitter', serif;
+  word-spacing: 5px;
+}
+
+.foodheading {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #FF8B00;
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.foodpara {
+  font-size: 16px;
+  width: 300px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.deliveryheading {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #3000FFD6;
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 195px;
+  padding-bottom: 7px;
+
+}
+
+.deliverypara {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 355px;
+  text-align: right;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.servicesheading {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #FF0000;
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 7px;
+
+}
+
+.servicespara {
+  font-size: 16px;
+  width: 300px;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.detailsheading {
+  font-family: 'Mochiy Pop One', sans-serif;
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 218px;
+  padding-bottom: 7px;
+
+}
+
+.detailspara {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 355px;
+  text-align: right;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.foodimg {
+  width: 115px;
+  height: 115px;
+  float: right;
+  margin-right: 10px;
+}
+
+.deliveryimg {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+
+.servicesimg {
+  width: 90px;
+  height: 90px;
+  float: right;
+  margin-right: 10px;
+}
+
+.detailsimg {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+
+.closinghead {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10px;
+  font-family: 'Teko', sans-serif;
+}
+
+.closingpara {
+  padding-top: 12px;
+  padding-left: 10px;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 17px;
+}
+
+.closingimg1 {
+  width: 385px;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.closingimg2 {
+  width: 385px;
+  height: 250px;
+}
+  </style>
+</head>
+
+<body>
+  <ul id="ul">
+    <li><a href="/">Home</a></li>
+    <li><a href="/menu">Menu</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/more">More</a></li>
+  </ul>
+  <div class="intro">
+    <div class="text"> MINI GRADUATE BAKERY<br>
+    </div>
+    <p class="para">Welcome everyone to Mini Graduate Bakery.<br>Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.<br>Still what!!!Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home. 
+  </div>
+  <div class="content">
+    <div class="food">
+      <p class="foodheading">FOOD</p>
+      <img src="https://i.ibb.co/Q9k7Vvb/Pngtree-food-icon-design-vector-5243044.png" class="foodimg">
+      <p class="foodpara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
+    </div>
+    <div class="delivery">
+      <p class="deliveryheading">DELIVERY</p>
+      <img src="https://www.shareicon.net/data/128x128/2016/05/27/771325_transport_512x512.png" class="deliveryimg">
+      <p class="deliverypara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
+    </div>
+    <div class="services">
+      <p class="servicesheading">SERVICES</p>
+      <img src="https://i.ibb.co/ZHkQL94/toppng-com-managed-services-icon-services-icon-png-black-378x389.png" class="servicesimg">
+      <p class="servicespara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
+    </div>
+    <div class="details">
+      <p class="detailsheading">DETAILS</p>
+      <img src="https://i.ibb.co/B2T7Hr5/report-3-xxl.png" class="detailsimg">
+      <p class="detailspara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
+    </div>
+  </div>
+  <div class="closing">
+    <div class="closinghead">THANKS FOR VISITING</div>
+    <div class="closingpara">Welcome everyone to Mini Graduate Bakery.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi Chitrakoot. </div>
+<img src="https://content.jdmagicbox.com/comp/chitrakoot-up/m2/9999p5198.5198.181215022009.e2m2/catalogue/mini-graduate-bakery-karwi-chitrakoot-up-cake-shops-i3510hiu5u.jpg" class="closingimg1"> 
+    <img src="https://i.ibb.co/Q93sYd2/IMG-20211106-183829.jpg" class="closingimg2">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
