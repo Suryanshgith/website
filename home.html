@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		  <meta charset="UTF-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		      <meta name="viewport" content="width=device-width, initial-scale=1">
+		        <title>Hamburger menu</title>
+			  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+	    .sidenav {
+		          display: none;
+			        position: absolute;
+				      z-index: 1;
+				            left: 0;
+					          right: 0;
+						        top: 50px;
+							      height: 1520px;
+							            width: auto;
+								          border-radius: 5px;
+									        margin: 0px 15px;
+										      background-color: white;
+										            transition: 0.5s;
+											          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+												        z-index: 1;
+													    }
+
+	        .logo-img {
+			      display: none;
+			          }
+
+		    .hamIcon {
+			          width: 30px;
+				        height: 20px;
+					      float: right;
+					            position: absolute;
+						          top: 20px;
+							        right: 30px;
+								    }
+
+		        .navChange {
+				      display: block;
+				          }
+
+			    .closeNav {
+				          width: 0px;
+					      }
+
+			        .heading {
+					      position: absolute;
+					            top: 5px;
+						          left: 20px;
+							        font-size: 15px;
+								      color: #556A98;
+								            font-weight: bold;
+									          font-family: 'Poppins', sans-serif;
+										      }
+
+				    .menu-in-div-1 {
+					          position: absolute;
+						        background-color: white;
+							      display: flex;
+							            width: auto;
+								          height: auto;
+									        flex-direction: column;
+										      top: 70px;
+										            padding: 10px 50px;
+											          z-index: 4;
+												      }
+
+				        .link-btn {
+						      height: 80px;
+						            width: auto;
+							        }
+
+					    .in-hr {
+						          width: 100%;
+							        background-color: #00000021;
+								      height: 1px;
+								            border: 0 none;
+									        }
+
+					        #last-hr {
+							      visibility: hidden;
+							          }
+
+						    .box-head {
+							          color: #2F2F2F;
+								        font-weight: 600;
+									      font-family: 'Poppins', sans-serif;
+									            font-size: 15px;
+										        }
+
+						        .box-para {
+								      color: #556A98;
+								            height: auto;
+									          width: auto;
+										        font-family: 'DM Sans', sans-serif;
+											      font-size: 14px;
+											            font-weight: 400;
+												        }
+
+							    .menu-in-div-1 a {
+								          text-decoration: none;
+									      }
+
+							        .menu-in-div-2 a {
+									      text-decoration: none;
+									          }
+
+								    .main-hr-1 {
+									          width: 100%;
+										        background-color: #00000021;
+											      height: 1px;
+											            position: absolute;
+												          top: 765px;
+													        z-index: 20;
+														      border: 0 none;
+														          }
+
+								        .main-hr-2 {
+										      width: 100%;
+										            background-color: #00000021;
+											          height: 1px;
+												        position: absolute;
+													      top: 55px;
+													            left: 0;
+														          z-index: 100;
+															        border: 0 none;
+
+																    }
+
+									    .main-hr-3 {
+										          width: 100%;
+											        background-color: #00000021;
+												      height: 1px;
+												            position: absolute;
+													          left: 0;
+														        top: 55px;
+															      z-index: 500;
+															            border: 0 none;
+
+																        }
+
+									        .main-hr-4 {
+											      width: 100%;
+											            background-color: #00000021;
+												          height: 1px;
+													        position: absolute;
+														      left: 0;
+														            top: 490px;
+															          z-index: 100;
+																        border: 0 none;
+																	    }
+
+										    .menu-item-div-2 {
+											          top: 775px;
+												        height: 70px;
+													      width: auto;
+													            height: 65px;
+														          position: absolute;
+															        left: 0;
+																      right: 0;
+																            background-color: white;
+																	          box-sizing: border-box;
+																		        display: flex;
+																			      align-items: center;
+																			            padding: 0px 0px 0px 20px;
+																				          z-index: 5;
+																					        color: #556A98;
+																						      font-family: 'Poppins', sans-serif;
+																						            font-size: 15px;
+																							          color: #000967;
+																								        font-weight: bold;
+																									    }
+
+										        .menu-item-div-3 {
+												      top: 840px;
+												            height: 70px;
+													          width: auto;
+														        height: 65px;
+															      position: absolute;
+															            left: 0;
+																          right: 0;
+																	        background-color: white;
+																		      box-sizing: border-box;
+																		            display: flex;
+																			          align-items: center;
+																				        padding: 0px 0px 0px 20px;
+																					      font-size: 15px;
+																					            color: #556A98;
+																						          font-weight: bold;
+																							        font-family: 'Poppins', sans-serif;
+																								      z-index: 20;
+																								          }
+
+											    .menu-item-div-4 {
+												          top: 905px;
+													        height: 70px;
+														      width: auto;
+														            position: absolute;
+															          left: 0;
+																        right: 0;
+																	      background-color: white;
+																	            box-sizing: border-box;
+																		          display: flex;
+																			        flex-direction: column;
+																				      justify-items: center;
+																				            padding: 0px 0px 0px 20px;
+																					          font-size: 15px;
+																						        colorposition: absolute;
+																							        left: 0;
+																								        right: 0;
+																									    dth: 370px;
+																									            height: 94px;
+																										          }
+
+											          #link-btn-2 {
+													          width: 370px;
+														          height: 94px;
+															        }
+
+												       
+												            <li class="l-menu" id="l-menu-4" onclick="changeDisplay2()">Resources</li>
+													              <li class="l-menu" id="l-menns</p>
+																             <p class="box-para">
+																		                     Super cha
