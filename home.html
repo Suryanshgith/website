@@ -328,9 +328,9 @@
     .menu-extend-2 {
       display: none;
     }
-    
-    #menu-in-div-2{
-      display:none;
+
+    #menu-in-div-2 {
+      display: none;
     }
 
     @media only screen and (max-width: 767px) {}
@@ -499,8 +499,7 @@
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
-
-      .sidenav {
+            .sidenav {
         display: none;
       }
 
@@ -709,9 +708,10 @@
       .changeDisplay {
         display: block;
       }
-      
-      .lap-a-menu{
+
+      .lap-a-menu {
         text-decoration: none;
+        color: #556A98;
       }
     }
   </style>
@@ -828,10 +828,16 @@
       <div class="l-div-nav">
         <ul class="l-menu-items">
           <li class="l-menu" id="l-menu-1" onclick="changeDisplay1()">Features</li>
-          <a href="#" class="lap-a-menu"><li class="l-menu" id="l-menu-2">Pricing</li></a>
-         <a href="#" class="lap-a-menu"><li class="l-menu" id="l-menu-3">Help Center</li></a>
-         <li class="l-menu" id="l-menu-4" onclick="changeDisplay2()">Resources</li></a>
-          <a href="#" class="lap-a-menu"><li class="l-menu" id="l-menu-5">Login</li></a>
+          <a href="#" class="lap-a-menu">
+            <li class="l-menu" id="l-menu-2">Pricing</li>
+          </a>
+          <a href="#" class="lap-a-menu">
+            <li class="l-menu" id="l-menu-3">Help Center</li>
+          </a>
+          <li class="l-menu" id="l-menu-4" onclick="changeDisplay2()">Resources</li></a>
+          <a href="#" class="lap-a-menu">
+            <li class="l-menu" id="l-menu-5">Login</li>
+          </a>
         </ul>
       </div>
       <div class="btn-div">
@@ -953,27 +959,27 @@
 
 
     function changeDisplay1() {
-   if (c.classList.contains('changeDisplay')) {
+      if (c.classList.contains('changeDisplay')) {
         c.classList.remove("changeDisplay")
       }
-   else if(d.classList.contains('changeDisplay')){
-     d.classList.remove('changeDisplay')
-     c.classList.add('changeDisplay')
-   }
+      else if (d.classList.contains('changeDisplay')) {
+        d.classList.remove('changeDisplay')
+        c.classList.add('changeDisplay')
+      }
       else {
         c.classList.add("changeDisplay")
       }
     }
 
     function changeDisplay2() {
-       
-    if (d.classList.contains('changeDisplay')) {
+
+      if (d.classList.contains('changeDisplay')) {
         d.classList.remove("changeDisplay")
-    }
-    else if (c.classList.contains('changeDisplay')) {
-      c.classList.remove('changeDisplay')
-      d.classList.add('changeDisplay')
-    }
+      }
+      else if (c.classList.contains('changeDisplay')) {
+        c.classList.remove('changeDisplay')
+        d.classList.add('changeDisplay')
+      }
       else {
         d.classList.add("changeDisplay")
       }
@@ -981,4 +987,5 @@
   </script>
 
 </body>
+
 </html>
