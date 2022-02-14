@@ -8,7 +8,6 @@
   <title>HTML</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     html,
     body,
@@ -88,106 +87,72 @@
       background: transparent;
     }
 
-    .main-div {
-
-      width: 280px;
-      height: 92px;
-      position: relative;
-      top: 100px;
-      border-radius: 4px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      left: 5px;
-      font-family: 'Montserrat', sans-serif;
-
-    }
-
-    .img-div {
-      background-color: black;
-      width: 95px;
-      height: 85px;
-      position: absolute;
-      top: 3px;
-      left: 2px;
-      border-radius: 5px;
-    }
-
-    .img {
-      height: 95px;
-      width: 95px;
-      position: absolute;
-    }
-
-    .main-content {
-      display: flex;
-      width: auto;
-      height: auto;
-      position: absolute;
-      left: 100px;
-      flex-direction: column;
-      right: 2px;
-      top: 2px;
-      bottom: 2px;
-    }
-
-    .main-head {
-      position: absolute;
-      top: 5px;
-      font-weight: bold;
-      left: 2px;
-    }
-
-    .description-p {
-      position: absolute;
-      top: 30px;
-      font-size: 14px;
-      left: 2px;
-      color: #828581;
-      font-weight: 500;
-    }
-
-    .price-p {
-      position: absolute;
-      top: 60px;
+    .header-div {
+      background-color: #A3BE46;
+      height: 100%;
+      width: 100%;
+      padding: 5px 0px 5px 0px;
       font-size: 16px;
-      font-weight: bold;
-      left: 5px;
-    }
-
-    .offer-p {
-      height: 20px;
-      width: auto;
-      position: absolute;
-      bottom: 3px;
-      padding: 0px 5px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      background-color: #25AD00;
-      color: white;
-      font-size: 11px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-weight: 600;
-      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .in-text-div {
+      position: absolute;
+      font-size: 15px;
+      width: auto;
+      height: 20px;
+      top: 180px;
+      right: 0px;
+      left: 0px;
+      bottom: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .in-text {
+      font-family: 'Montserrat', sans-serif;
+      position: absolute;
+      left: 13%;
+    }
+
+    .call-link {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      float: right;
+      display: flex;
+      position: absolute;
+      right: 3%;
+    }
+
+    @media only screen and (max-width: 1023px) {}
+
+    @media only screen and (min-width: 1024px) and (max-width: 1605px) {
+      .in-text-div{
+        top:100px;
+      }
+      .in-text{
+        left:410px;
+      }
+      .call-link{
+        right:5%;
+      }
     }
   </style>
 </head>
 
 <body>
-
-  <div class="main-div">
-    <div class="img-div">
-      <img src="https://i.ibb.co/MksGLH3/pngfind-com-pizza-emoji-png-800270.png" class="img">
-      <p class="offer-p">10% OFF</p>
-    </div>
-    <div class="main-content">
-      <p class="main-head">Meat Pizza</p>
-      <p class="description-p">Hungry Puppets</p>
-      <p class="price-p">$ 370.0</p>
-    </div>
+  <div class="header-div">
+    <p class="heading">PENDING</p>
   </div>
-
-
+  <div class="in-text-div">
+    <p class="in-text">
+      GET DIRECTION&nbsp;&nbsp;
+    </p>
+    <a href="#" class="call-link">CALL NOW</a>
+  </div>
 </body>
 
 </html>
