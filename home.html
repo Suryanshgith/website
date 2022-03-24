@@ -1,18 +1,291 @@
 <!DOCTYPE html>
-  <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML</title>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+    html,
+    body {
+      all: initial;
+      all: unset;
+    }
+
+    .img-intro {
+      width: 390px;
+      height: 200px;
+    }
+
+    ul {
+      background-color: #8B94FF;
+      margin: 0px;
+      padding: 0px;
+      font-size: 16px;
+      width: 385px;
+      height: 100%;
+    }
+
+    #ul {
+      list-style-type: none;
+      display: block;
+      width: auto;
+    }
+
+    ul>li {
+      display: inline-block;
+      margin: 8px;
+      color: white;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    ul>li>a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      color: white;
+      font-family: 'Roboto Slab', serif;
+    }
+
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      bottom: 10px;
+      width: auto;
+      height: 930px;
+      background-color: #FCA2A2;
+      flex-direction: column;
+    }
+
+    .food {
+      margin: 0px auto;
+      width: 365px;
+      height: 210px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 0px 0px 0px 15px;
+    }
+
+    .delivery {
+      margin: 0px auto;
+      width: 365px;
+      height: 210px;
+      background-color: #73FF6C;
+      border-radius: 20px;
+      padding: 0px 0px 0px 15px;
+    }
+
+    .services {
+      margin: 0px auto;
+      width: 365px;
+      height: 210px;
+      background-color: #FED84B;
+      border-radius: 20px;
+      padding: 0px 0px 0px 15px;
+    }
+
+    .details {
+      margin: 0px auto;
+      width: 365px;
+      height: 210px;
+      background-color: #6FB9FF;
+      border-radius: 20px;
+      padding: 0px 0px 0px 15px;
+    }
+
+    .closing {
+      width: auto;
+      height: auto;
+      background-color: orange;
+      position: relative;
+      bottom: 10px;
+      padding-bottom: 50px;
+    }
+
+    .text {
+      color: #FFDE00;
+      padding-top: 7px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: 'Calistoga', cursive;
+    }
+
+    .para {
+      color: rgba(236, 236, 236, 1);
+      font-size: 15px;
+      padding-left: 5px;
+      font-family: 'Bitter', serif;
+      word-spacing: 5px;
+    }
+
+    .foodheading {
+      font-family: 'Mochiy Pop One', sans-serif;
+      color: #FF8B00;
+      width: 10px;
+      height: 10px;
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom: 7px;
+    }
+
+    .foodpara {
+      font-size: 16px;
+      width: 300px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .deliveryheading {
+      width: 10px;
+      color: #FF0000;
+      font-family: 'Mochiy Pop One', sans-serif;
+
+      height: 10px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: right;
+      margin-left: 195px;
+      padding-bottom: 7px;
+
+    }
+
+    .deliverypara {
+      font-size: 16px;
+      margin-right: 10px;
+      width: 355px;
+      text-align: right;
+      font-family: 'Rubik', sans-serif;
+
+    }
+
+    .servicesheading {
+      font-family: 'Mochiy Pop One', sans-serif;
+      color: #3000FFD6;
+      width: 10px;
+      height: 10px;
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom: 7px;
+    }
+
+    .servicespara {
+      font-size: 16px;
+      width: 300px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .detailsheading {
+      font-family: 'Mochiy Pop One', sans-serif;
+      width: 10px;
+      height: 10px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: right;
+      margin-left: 218px;
+      padding-bottom: 7px;
+    }
+
+    .detailspara {
+      font-size: 16px;
+      margin-right: 10px;
+      width: 355px;
+      text-align: right;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .foodimg {
+      width: 100px;
+      height: 100px;
+      float: right;
+      margin-right: 10px;
+    }
+
+    .deliveryimg {
+      display: flex;
+      width: 90px;
+      height: 90px;
+      float: left;
+    }
+
+    .servicesimg {
+      width: 90px;
+      height: 90px;
+      float: right;
+      margin-right: 10px;
+    }
+
+    .detailsimg {
+      display: flex;
+      width: 90px;
+      height: 90px;
+      float: left;
+    }
+
+    .closinghead {
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Teko', sans-serif;
+      padding-top: 10px;
+    }
+
+    .closingpara {
+      padding-top: 12px;
+      padding-left: 10px;
+      font-family: 'Signika Negative', sans-serif;
+      font-size: 17px;
+    }
+  </style>
 </head>
 
 <body>
-    <input type="tel" id="phone" name="phone" maxlength="10">
-    <select>
-      <option>Heklo</option>
-    </select>
+  <ul id="ul">
+    <li><a href="/">Home</a></li>
+    <li><a href="/menu">Menu</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/more">More</a></li>
+  </ul>
+  <img src="/pexels-ella-olsson-1640777.jpg" class="img-intro">
+  <div class="content">
+    <div class="food">
+      <p class="foodheading">FOOD</p>
+      <img src="/fd80ecec48eba2a9adb76e4133905879.jpg" class="foodimg">
+      <p class="foodpara">Welcome everyone to Taj Hotel.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
+    </div>
+    <div class="delivery">
+      <p class="deliveryheading">DELIVERY</p>
+      <img src="/kisspng-delivery-vector-graphics-courier-computer-icons-ma-smoke-supplies-canada-page-2-all-your-smoke-su-5c46b24ab62cd8.0305070415481370347462.png" class="deliveryimg">
+      <p class="deliverypara">Welcome everyone to Taj Hotel.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
+    </div>
+    <div class="services">
+      <p class="servicesheading">SERVICES</p>
+      <img src="https://i.ibb.co/ZHkQL94/toppng-com-managed-services-icon-services-icon-png-black-378x389.png" class="servicesimg">
+      <p class="servicespara">Welcome everyone to Taj Hotel.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi, Chitrakoot and online delivery service.Still what!!!</p>
+    </div>
+    <div class="details">
+      <p class="detailsheading">DETAILS</p>
+      <img src="https://i.ibb.co/B2T7Hr5/report-3-xxl.png" class="detailsimg">
+      <p class="detailspara">Welcome everyone to Taj Hotel.Want some great food to have by being just at home,We have some of the finest snacks in Karwi.</p>
+    </div>
+  </div>
+  <div class="closing">
+    <div class="closinghead">THANKS FOR VISITING</div>
+    <div class="closingpara">Welcome everyone to Taj Hotel.Want some great food to have by being just at home,We have some of the finest snacks and foods in the Karwi Chitrakoot. </div>
+
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
