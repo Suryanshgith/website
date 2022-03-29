@@ -1,0 +1,14 @@
+f = open("sample.txt","a")
+
+# read = f.read(3)
+# write = f.write("Kya kar rha hai bro")
+# append = f.write("Kya hua bro")
+# f.close()
+
+with open("sample.txt","r") as f:
+	text = f.read()
+#	print(text)
+
+with open("sample.txt","w") as f:
+	write = f.write("What happened to you yrr")
+
